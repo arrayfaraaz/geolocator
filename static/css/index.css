@@ -1,0 +1,28 @@
+body {
+
+    background-color: #003366;
+
+}
+
+#form1.form-group {
+
+
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-left: 18cm;
+    
+
+}
+
+#submit-button.form-group {
+
+    display: flex;
+    align-items: center;
+    
+    padding: 5px;
+    margin-left: 18cm;
+
+}
+
