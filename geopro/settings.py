@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+from django.contrib.messages import constants as messages
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -131,3 +132,14 @@ GEOIP_PATH = [BASE_DIR / "geoip"]
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Email Sending settings
+
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = 'mdfaraz2499@gmail.com'
+EMAIL_HOST_PASSWORD = 'MrMoraleandthebigsteppers'
+EMAIL_PORT = 465
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'sgbackend.SendGridBackend'
+SENDGRID_API_KEY = "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"
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER

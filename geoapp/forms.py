@@ -13,11 +13,13 @@ class MeasurementForm(forms.ModelForm):
             'location': TextInput(attrs={
                 'class': 'form-control',
                 'style': 'max-width: 300px',
+                'autocomplete': 'off',
             }),
 
             'destination': TextInput(attrs={
                 'class': 'form-control',
                 'style': 'max-width: 300px',
+                'autocomplete': 'off',
             })
             
         }

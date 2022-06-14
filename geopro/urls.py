@@ -14,11 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from geoapp import views
+
+admin.site.site_header = "GeoLocator Admin"
+admin.site.site_title = "GeoLocator Admin Portal"
+admin.site.index_title = "GeoLocator Researcher Portal"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.calculate_distance, name="calculate_distance")
+    path('', views.calculate_distance, name="calculate_distance"),
+    path('contactus/', views.contact, name='contact')
 ]
 
