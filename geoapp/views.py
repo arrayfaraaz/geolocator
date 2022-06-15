@@ -109,8 +109,8 @@ def contact(request):
         send_mail(
             "This is an automated mail sent directly from the server.",
             f"Hello {name},\n\n We are so glad to hear from you and we are here to help you with everything we can. As you mentioned the reason '{desc}' we want you to elaborate a little so that we can help you with specific approach. Feel free to reply to this Email.\n\n\n\n\n Thanks\n GeoLocator Team ",
-            "mdfaraz2499@gmail.com",
-            [email],
+            "your_email",
+            ["to_email"],
             fail_silently=False
         )
 
